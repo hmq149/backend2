@@ -12,7 +12,7 @@ import springbootthymeleaf.backend2.service.StudentService;
 @Controller
 @RequestMapping(value = "/students")
 public class StudentController {
-    private final StudentService studentService;
+    private StudentService studentService;
 
     public StudentController(StudentService studentService) {
         super();
@@ -34,7 +34,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public String saveStudent(@ModelAttribute("students") Student student){
+    public String saveStudent(@ModelAttribute("student") Student student){
         studentService.saveStudent(student);
         return "redirect:/students";
 
