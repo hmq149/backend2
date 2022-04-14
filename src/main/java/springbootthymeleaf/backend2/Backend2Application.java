@@ -21,9 +21,9 @@ public class Backend2Application implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		Student student1 = new Student("Hoàng","Quân","hmq@gmail.com");
+		/*Student student1 = new Student("Hoàng","Quân","hmq@gmail.com");
 		studentRepository.save(student1);
 		Student student2 = new Student("Ngô","Minh","nqm@gmail.com");
-		studentRepository.save(student2);
+		studentRepository.save(student2);*/
 	}
 }
